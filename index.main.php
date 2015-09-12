@@ -27,17 +27,31 @@ skin_init( $disp );
 
 
 // -------------------------- HTML HEADER INCLUDED HERE --------------------------
-skin_include( '_html_header.inc.php', array() );
+skin_include( '_html_header.inc.php' );
+// Note: You can customize the default HTML header by copying the generic
+// /skins/_html_header.inc.php file into the current skin folder.
 // -------------------------------- END OF HEADER --------------------------------
-
-
-// ---------------------------- SITE HEADER INCLUDED HERE ----------------------------
-// If site headers are enabled, they will be included here:
-siteskin_include( '_site_body_header.inc.php' );
-// ------------------------------- END OF SITE HEADER --------------------------------
 ?>
 <div id="wrap">
 <div id="header">
+	<div class="blog_list">
+      <?php
+	  // START OF BLOG LIST
+	  skin_widget( array(
+			'widget' => 'colls_list_public',
+			'block_start' => '',
+			'block_end' => '',
+			'block_display_title' => false,
+			'list_start' => '',
+			'list_end' => '',
+			'item_start' => '',
+			'item_end' => '',
+			'item_selected_start' => '<span class="selected">',
+			'item_selected_end' => '</span>',
+		  ) );
+	  ?>
+    </div>
+    <div class="clear"></div>
 	<div id="title">
 		<?php
 				// ------------------------- "Header" CONTAINER EMBEDDED HERE --------------------------

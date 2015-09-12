@@ -19,6 +19,7 @@ body {
 #title {
 	float: left;
 	margin: 6px 0px 0px 20px;
+	margin-top: -10px;
 }
 #topright {
 	float: right;
@@ -30,15 +31,16 @@ body {
 .search {
 	margin-bottom: 5px;
 }
-#navtop {
-	padding-bottom: 10px;
+.blog_list {
 	font-size: 9pt;
+	float: right;
+	margin: 10px 20px 0px 0px;
 }
-#navtop ul li {
+.blog_list a {
 	list-style: none;
 	display: inline;
 }
-#navtop li {
+.blog_list a {
 	padding-left: 15px;
 }
 #navigation {
@@ -283,7 +285,7 @@ div.bComment, form.bComment {
 	border: none !important;
 }
 .bComment textarea {
-	width: auto !important;
+	width: 300px !important;
 }
 /* Low resolution layout */
 /*@media screen and (max-width: 768px) {
